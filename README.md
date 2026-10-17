@@ -10,11 +10,11 @@ Add screenshots of your application to the `images/` folder in this repository. 
 
 ### Student Dashboard
 
-![Student Dashboard](images/student.png)
+![Student Dashboard](images/student.PNG)
 
 ### Driver Dashboard
 
-![Driver Dashboard](images/driver.png)
+![Driver Dashboard](images/driver.PNG)
 
 ## ✨ Features
 
