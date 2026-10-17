@@ -4,6 +4,9 @@ A web-based school bus tracking interface designed to help students identify nea
 
 This repository contains the **frontend only**, developed using HTML, CSS, and JavaScript.
 
+## live demo site
+[Student Dashboard](https://funwi6191.github.io/School-Bus-Tracking-System-Frontend/)
+
 ## 📸 Screenshots
 
 Add screenshots of your application to the `images/` folder in this repository. Replace the example images below with your actual screenshots.
