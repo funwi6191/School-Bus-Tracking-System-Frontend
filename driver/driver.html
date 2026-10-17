@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>School Bus Driver</title>
+
+    <link rel="stylesheet"
+          href="driver.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- ========================= -->
+    <!-- DRIVER HEADER -->
+    <!-- ========================= -->
+
+    <header class="driver-header">
+
+        <h1>🚌 School Bus Driver</h1>
+
+        <p>
+            Start a trip and share your location
+        </p>
+
+    </header>
+
+
+
+    <!-- ========================= -->
+    <!-- DRIVER CARD -->
+    <!-- ========================= -->
+
+    <div class="driver-card">
+
+
+        <!-- ========================= -->
+        <!-- SELECT BUS -->
+        <!-- ========================= -->
+
+        <div class="form-group">
+
+            <label for="busId">
+                Select Bus
+            </label>
+
+            <select id="busId">
+
+                <option value="">
+                    Loading buses...
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- FROM LOCATION -->
+        <!-- ========================= -->
+
+        <div class="form-group">
+
+            <label for="fromLocation">
+                Where are you starting from?
+            </label>
+
+            <select id="fromLocation">
+
+                <option value="">
+                    Select starting location
+                </option>
+
+                <option value="Braamfontein Main Campus">
+                    Braamfontein Main Campus
+                </option>
+
+                <option value="Bedford Campus">
+                    Bedford Campus
+                </option>
+
+                <option value="Troye Campus">
+                    Troye Campus
+                </option>
+
+                <option value="Rest Student Accommodation">
+                    Rest Student Accommodation
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- TO LOCATION -->
+        <!-- ========================= -->
+
+        <div class="form-group">
+
+            <label for="destination">
+                Where are you going?
+            </label>
+
+            <select id="destination">
+
+                <option value="">
+                    Select destination
+                </option>
+
+                <option value="Braamfontein Main Campus">
+                    Braamfontein Main Campus
+                </option>
+
+                <option value="Bedford Campus">
+                    Bedford Campus
+                </option>
+
+                <option value="Troye Campus">
+                    Troye Campus
+                </option>
+
+                <option value="Rest Student Accommodation">
+                    Rest Student Accommodation
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- TRIP INFORMATION -->
+        <!-- ========================= -->
+
+        <div class="route-info">
+
+            <h3>
+                Trip Information
+            </h3>
+
+
+            <div class="route-row">
+
+                <span>
+                    From
+                </span>
+
+                <strong id="tripFrom">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="route-row">
+
+                <span>
+                    To
+                </span>
+
+                <strong id="tripTo">
+                    ---
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- CURRENT BUS -->
+        <!-- ========================= -->
+
+        <div class="current-bus">
+
+            <strong>
+                Current Bus
+            </strong>
+
+            <span id="currentBus">
+                No bus selected
+            </span>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- STATUS -->
+        <!-- ========================= -->
+
+        <div class="status-box">
+
+            <span class="status-dot"></span>
+
+            <span id="status">
+                Not Tracking
+            </span>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- CURRENT LOCATION -->
+        <!-- ========================= -->
+
+        <div class="location-card">
+
+            <h3>
+                Current Location
+            </h3>
+
+
+            <div class="location-row">
+
+                <span>
+                    Latitude
+                </span>
+
+                <strong id="latitude">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="location-row">
+
+                <span>
+                    Longitude
+                </span>
+
+                <strong id="longitude">
+                    ---
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- BUTTONS -->
+        <!-- ========================= -->
+
+        <div class="button-group">
+
+            <button
+                id="startTripButton"
+                class="start-button"
+                type="button">
+
+                ▶ Start Trip
+
+            </button>
+
+
+            <button
+                id="stopTripButton"
+                class="stop-button"
+                type="button"
+                disabled>
+
+                ■ Stop Trip
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- DRIVER JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="driver.js"></script>
+
+</body>
+
+</html>

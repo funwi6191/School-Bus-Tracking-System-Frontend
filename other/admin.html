@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>School Bus Admin</title>
+
+    <link rel="stylesheet"
+          href="admin.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚌 School Bus Admin Dashboard</h1>
+
+        <p class="subtitle">
+            Monitor and manage school buses
+        </p>
+
+
+        <div class="dashboard-card">
+
+            <div class="card-header">
+
+                <h2>Bus Management</h2>
+
+                <button id="refreshButton">
+                    🔄 Refresh
+                </button>
+
+            </div>
+
+
+            <div id="loading">
+                Loading buses...
+            </div>
+
+
+            <table id="busTable">
+
+    <thead>
+
+        <tr>
+
+            <th>Bus Number</th>
+
+            <th>Registration</th>
+
+            <th>Route</th>
+
+            <th>Status</th>
+
+            <th>Latitude</th>
+
+            <th>Longitude</th>
+
+            <th>Last Updated</th>
+
+            <th>Actions</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="busTableBody">
+
+    </tbody>
+
+</table>
+
+        </div>
+        
+        <div class="dashboard-card">
+
+    <div class="card-header">
+
+        <h2>📍 Pickup Stop Management</h2>
+
+        <button id="refreshStopsButton">
+            🔄 Refresh Stops
+        </button>
+
+    </div>
+
+
+    <div class="stop-form">
+
+        <h3>Add Pickup Stop</h3>
+
+        <input
+            type="text"
+            id="stopName"
+            placeholder="Stop name"
+        >
+
+        <input
+            type="number"
+            id="stopLatitude"
+            placeholder="Latitude"
+            step="any"
+        >
+
+        <input
+            type="number"
+            id="stopLongitude"
+            placeholder="Longitude"
+            step="any"
+        >
+
+        <input
+            type="number"
+            id="stopOrder"
+            placeholder="Stop order"
+            min="1"
+        >
+
+        <select id="stopRoute">
+
+            <option value="">
+                Select Route
+            </option>
+
+        </select>
+
+        <label>
+
+            <input
+                type="checkbox"
+                id="stopActive"
+                checked
+            >
+
+            Active
+
+        </label>
+
+        <button id="addStopButton">
+            ➕ Add Pickup Stop
+        </button>
+
+    </div>
+
+
+    <div id="stopMessage"></div>
+
+
+    <table id="stopTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Stop</th>
+
+                <th>Order</th>
+
+                <th>Route</th>
+
+                <th>Latitude</th>
+
+                <th>Longitude</th>
+
+                <th>Status</th>
+
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="stopTableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+    </div>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

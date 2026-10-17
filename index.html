@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>School Bus Tracker</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="student-header">
+
+        <div class="header-left">
+
+            <h1>🚌 School Bus Tracker</h1>
+
+            <p>Find your nearest school bus</p>
+
+        </div>
+
+
+        <div class="live-badge">
+
+            <span class="live-dot"></span>
+
+            <span>Live</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         BUS SUMMARY
+         ========================= -->
+
+    <section class="bus-summary">
+
+        <div class="summary-item">
+
+            <span class="summary-label">
+                Nearest Bus
+            </span>
+
+            <div class="bus-name-row">
+
+                <strong id="nearestBus">
+                    Searching...
+                </strong>
+
+                <span class="en-route">
+                    🚌 En route
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="summary-divider"></div>
+
+
+        <div class="summary-item distance-item">
+
+            <span class="summary-label">
+                Distance from you
+            </span>
+
+            <strong id="distance">
+                ---
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INFORMATION CARDS
+         ========================= -->
+
+    <div class="information-grid">
+
+
+        <!-- TRIP INFORMATION -->
+
+        <section class="info-card">
+
+            <div class="card-title">
+
+                <span class="card-icon trip-icon">
+                    ⇄
+                </span>
+
+                <h2>Trip Information</h2>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon from-icon">
+                        ●
+                    </span>
+
+                    <span>From</span>
+
+                </div>
+
+                <strong id="from">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon to-icon">
+                        ●
+                    </span>
+
+                    <span>To</span>
+
+                </div>
+
+                <strong id="destination">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon next-icon">
+                        →
+                    </span>
+
+                    <span>Next Stop</span>
+
+                </div>
+
+                <strong id="nextStop">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon eta-icon">
+                        ◷
+                    </span>
+
+                    <span>ETA</span>
+
+                </div>
+
+                <strong id="estimatedArrival">
+                    ---
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PICKUP STOP -->
+
+        <section class="info-card">
+
+            <div class="card-title">
+
+                <span class="card-icon pickup-icon">
+                    ♧
+                </span>
+
+                <h2>Pickup Stop</h2>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon pickup-row-icon">
+                        ●
+                    </span>
+
+                    <span>Pickup Stop</span>
+
+                </div>
+
+                <strong id="nearestStop">
+                    Searching...
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon list-icon">
+                        ☷
+                    </span>
+
+                    <span>Stop Number</span>
+
+                </div>
+
+                <strong id="stopOrder">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon clock-icon">
+                        ◷
+                    </span>
+
+                    <span>Last Updated</span>
+
+                </div>
+
+                <strong id="lastUpdated">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="info-row status-row">
+
+                <div class="row-left">
+
+                    <span class="row-icon status-icon">
+                        •
+                    </span>
+
+                    <span>Status</span>
+
+                </div>
+
+                <strong id="busStatus">
+                    Searching...
+                </strong>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- =========================
+         LIVE MAP
+         ========================= -->
+
+    <section class="map-card">
+
+        <div class="map-title">
+
+            <span class="map-icon">
+                ▣
+            </span>
+
+            <h2>Live Map</h2>
+
+        </div>
+
+        <div id="map"></div>
+
+    </section>
+
+
+</div>
+
+
+<!-- Leaflet JS -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<!-- Your student JavaScript -->
+
+<script src="student.js"></script>
+
+</body>
+
+</html>
