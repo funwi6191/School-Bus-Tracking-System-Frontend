@@ -10,15 +10,11 @@ Add screenshots of your application to the `images/` folder in this repository. 
 
 ### Student Dashboard
 
-![Student Dashboard](images/student-dashboard.png)
-
-### Live Bus Tracking Map
-
-![Live Bus Tracking Map](images/bus-tracking-map.png)
+![Student Dashboard](images/student.png)
 
 ### Driver Dashboard
 
-![Driver Dashboard](images/driver-dashboard.png)
+![Driver Dashboard](images/driver.png)
 
 > **Tip:** GitHub displays these images directly in your README when the image paths and filenames match the files in your repository.
 
@@ -49,16 +45,21 @@ Add screenshots of your application to the `images/` folder in this repository. 
 ```text
 SchoolBusTrackingSystem-Frontend/
 ├── index.html
-├── style.css
-├── script.js
+├── student.css
+├── student.js
+├── driver/
+│   ├── driver.html
+│   ├── driver.css
+│   └── driver.js
+├── other/
+│   ├── admin.html
+│   ├── admin.css
+│   └── admin.js
 ├── images/
-│   ├── student-dashboard.png
-│   ├── bus-tracking-map.png
-│   └── driver-dashboard.png
+│   ├── student.png
+│   └── driver.png
 └── README.md
 ```
-
-*Adjust the filenames above to match your actual project.*
 
 ## 🚀 Getting Started
 
