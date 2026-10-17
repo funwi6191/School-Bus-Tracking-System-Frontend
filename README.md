@@ -16,8 +16,6 @@ Add screenshots of your application to the `images/` folder in this repository. 
 
 ![Driver Dashboard](images/driver.png)
 
-> **Tip:** GitHub displays these images directly in your README when the image paths and filenames match the files in your repository.
-
 ## ✨ Features
 
 - **Interactive Map:** Displays bus locations and pickup stops using Leaflet and OpenStreetMap.
