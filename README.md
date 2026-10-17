@@ -108,7 +108,7 @@ The goal of this project is to help reduce uncertainty around school bus arrival
 **Funwi Checy**
 
 - GitHub: [@funwi6191](https://github.com/funwi6191)
-- LinkedIn: [Connect with me](https://www.linkedin.com/in/)
+- LinkedIn: [Connect with me](https://www.linkedin.com/in/funwi-checy-4737a3323?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ## 📄 License
 
